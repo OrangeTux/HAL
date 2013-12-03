@@ -13,7 +13,7 @@
     [
         {
             "matches": ["https://*.hanze.nl/*"],
-            "js": ["jquery.js", "hal.js"],
+            "js": ["assets/js/jquery.js", "hal.js"],
             "run_at": "document_idle"
         }
     ],
