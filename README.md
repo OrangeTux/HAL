@@ -20,7 +20,7 @@ Security considerations
 Currently no encryption has been used to encrypt your credentials. The
 exension runs in an [isolated world][2] and therefore no other Javascript
 or Chrome extensions could access these variables. But when an attacker somehow
-take over your screen he'll be able to make the credentials visible. This
+takes over your screen he'll be able to make the credentials visible. This
 also true for the default password manager in Chrome, visit 
 `chrome://settings/passwords`. Saving passwords in a browser is never good
 practise. 
