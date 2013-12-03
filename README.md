@@ -11,7 +11,7 @@ mode** in de upper right corner. Click **Load unpack extension...** and select
 the folder with this exension. Now click on options and set your username and 
 password on the options page of the exentension.
 
-![Clarifying screenshot](images/readme.png)
+![Clarifying screenshot](assets/img/readme.png)
 
 Now visit a website like [digirooster.hanze.nl][1] and see the magic happen.
 
