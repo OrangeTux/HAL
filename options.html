@@ -1,41 +1,27 @@
 <html>
-    <head>
+    <head>  
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/options.css" rel="stylesheet">
         <title>
             Options page for Hanze Automated Login
         </title>
     </head>
 
     <body>
-        <div id="message">
+        <div id="message" class="alert alert-success">
         </div>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="username">user name:</label>
-                    </td>
-                    <td>
-                        <input type="text" id="username" name="username" />
-                    </td>
-                </tr>
 
-                <tr>
-                    <td>
-                        <label for="password">password:</label>
-                    </td>
-                    <td>
-                        <input type="password" id="password" name="password" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button id="save">Save</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div id=#container">
+            <form id="form" class="form">
+                <h2 class="form-header">Hanze Auto Login</h2>
+                <input type="text" id="username" class="form-control" placeholder="Username" required autofocus>
+                <input type="password" id="password" class="form-control" placeholder="Password" required>
+                <button id="save" class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+            </form>
+        </div>
     </body>
 
-    <script src="jquery.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="options.js"></script>
 </html>

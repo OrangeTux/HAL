@@ -6,7 +6,7 @@ function save_options() {
     localStorage['username'] = username;
     localStorage['password'] = password;
 
-    $('#message').html('Saved');
+    $('#message').html('Saved!').show();
 }
 
 // Load data into form.
@@ -18,5 +18,9 @@ function restore_options() {
     $('#password').val(password);
 };
 
-$('#save').on('click', save_options);
+$('#form').submit(function(event) {
+    save_options();
+    event.preventDefault();
+});
+
 $().ready(restore_options);
