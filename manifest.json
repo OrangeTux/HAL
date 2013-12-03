@@ -2,8 +2,8 @@
     "manifest_version": 2,
     "name": "Hanze Automated Login",
     "description": "Automate logins into services of the Hanzehogeschool.",
-    "author": "Auke Willem Oosterhoff <awoosterhoff@gmail.com>",
-    "version": "0.0.1",
+    "author": "Auke Willem Oosterhoff <awoosterhoff@gmail.com>", // See for more authors AUTHORS.txt
+    "version": "0.1.0",
 
     "background": {
         "scripts": ["background.js"]
