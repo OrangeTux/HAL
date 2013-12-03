@@ -6,8 +6,6 @@ function save_options() {
     localStorage['username'] = username;
     localStorage['password'] = password;
 
-    console.log('Saved');
-
     $('#message').html('Saved');
 }
 
