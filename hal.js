@@ -36,10 +36,13 @@ function checkCorrectPassword(prevLink) {
 
 // Submit the login form.
 function submitForm() {
-    prevLink = document.URL;
-    if(checkCorrectPassword(prevLink)) {
-        $('#SubmitCreds').click();
-    }
+    $('#logonForm').submit();
 }
 
-fillForm(submitForm)
+// Check if error div contains input, if not fill and submit form.
+if($('.wrng').html() == '') {
+    fillForm(submitForm);
+} else {
+    // TODO Create nice error message and refer to options page.
+    console.log('Failed');
+}
