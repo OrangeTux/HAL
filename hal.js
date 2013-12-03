@@ -26,9 +26,20 @@ function fillForm(callback) {
     }, 1000);
 }
 
+// Check if user filled in the correct password, if not, user is returned to same page.
+function checkCorrectPassword(prevLink) {
+    if(document.URL!=prevLink) {
+        return true;
+    }
+    return false;
+}
+
 // Submit the login form.
 function submitForm() {
-    $('#SubmitCreds').click();
+    prevLink = document.URL;
+    if(checkCorrectPassword(prevLink)) {
+        $('#SubmitCreds').click();
+    }
 }
 
 fillForm(submitForm)
