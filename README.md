@@ -6,10 +6,11 @@ It logs you in automatically when you use a service on \*.hanze.nl websites.
 
 Installation and configuration
 ------------------------------
-Visit `chrome://extensions` in your Chrome browser and enable **Developer 
-mode** in de upper right corner. Click **Load unpack extension...** and select
-the folder with this exension. Now click on options and set your username and 
-password on the options page of the exentension.
+Download and install the extensions fom the [Chrome Webstore][3] or install
+from source. After downloading the source, visit `chrome://extensions` in your
+Chrome browser and enable **Developer mode** in de upper right corner. Click 
+**Load unpack extension...** and select password on the options page of the 
+exentension.
 
 ![Clarifying screenshot](assets/img/readme.png)
 
@@ -27,3 +28,4 @@ practise.
 
 [1]: https://digirooster.hanze.nl
 [2]: http://developer.chrome.com/extensions/content_scripts.html#execution-environment]
+[3]: https://chrome.google.com/webstore/detail/hanze-autologin/opmpicnbmefbmgdfncllejlnkgpabddi/related
