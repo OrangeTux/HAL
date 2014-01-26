@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Hanze AutoLogin",
     "description": "Automate logins into services of the Hanzehogeschool.",
-    "author": "Auke Willem Oosterhoff <awoosterhoff@gmail.com>", // See for more authors AUTHORS.txt
+    "author": "Auke Willem Oosterhoff <awoosterhoff@gmail.com>",
     "version": "0.1.1",
 
     "background": {
@@ -25,7 +25,6 @@
     },
 
     "permissions": [
-        // to save username and password
         "storage"    
     ],
 
