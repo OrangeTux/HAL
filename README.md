@@ -1,5 +1,5 @@
-Hanze Automated Login
-=====================
+Hanze AutoLogin
+===============
 Because it is annoying to fill in my password every time use a service of
 the Hanzehogeschool and I couldn't sleep I came up with this Chrome extension. 
 It logs you in automatically when you use a service on \*.hanze.nl websites.

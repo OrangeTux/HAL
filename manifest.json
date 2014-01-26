@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "Hanze Automated Login",
+    "name": "Hanze AutoLogin",
     "description": "Automate logins into services of the Hanzehogeschool.",
     "author": "Auke Willem Oosterhoff <awoosterhoff@gmail.com>", // See for more authors AUTHORS.txt
-    "version": "0.1.0",
+    "version": "0.1.1",
 
     "background": {
         "scripts": ["background.js"]
@@ -18,10 +18,18 @@
         }
     ],
 
+    "icons": {
+        "128" : "assets/img/icon_128.png",
+        "48" : "assets/img/icon_48.png",
+        "16" : "assets/img/icon_16.png"
+    },
+
     "permissions": [
         // to save username and password
         "storage"    
     ],
 
-    "options_page": "options.html"
+    "options_page": "options.html",
+
+     "web_accessible_resources": ["options.html"]
 }

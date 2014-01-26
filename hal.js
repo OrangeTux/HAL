@@ -40,9 +40,10 @@ function submitForm() {
 }
 
 // Check if error div contains input, if not fill and submit form.
-if($('.wrng').html() == '') {
+if(document.contains('.wrng') && $('.wrng').html() == '') {
     fillForm(submitForm);
+} else if($('.wrng') == null) {
+    // Do nothing.
 } else {
-    // TODO Create nice error message and refer to options page.
-    console.log('Failed');
+    $('body').prepend('<div>Hanze Auto Login: Login failed. Please change login credentials on <a href="' + chrome.extension.getURL("options.html") + '" target="_blanc">options page</a>.</div>');
 }
