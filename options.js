@@ -27,18 +27,18 @@ var formSubmit = function(event) {
     event.preventDefault();
 }
 
-if (form.addEventListener) {
+if(form.addEventListener) {
     // Chrome, IE somewhat, Firefox etc.
     form.addEventListener('submit', formSubmit, false);
-} else if (form.attachEvent) {
+} else if(form.attachEvent) {
     // Old IE..
     form.attachEvent('onSubmit', formSubmit);
 } 
 
 // Add the document load event listener to restore the saved options
-if (window.addEventListener) {
+if(window.addEventListener) {
     window.addEventListener('load', restore_options, false);
-} else if (document.attachEvent) {
+} else if(document.attachEvent) {
     // Because IE support
     document.attachEvent('onreadystatechange', restore_options);
 } else {
