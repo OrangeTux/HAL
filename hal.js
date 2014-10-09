@@ -40,6 +40,6 @@ if(wrngElements.length > 0 && wrngElements[0].innerHTML == '') {
 } else {
     var body = document.getElementsByTagName('body')[0];
     var warning = document.createElement('div');
-    warning.innerHTML = '<div>Hanze Auto Login: Login failed. Please change login credentials on <a href="'  chrome.extension.getURL('options.html')  '" target="_blanc">options page</a>.</div>';
+    warning.innerHTML = '<div>Hanze Auto Login: Login failed. Please change login credentials on <a href="' + chrome.extension.getURL('options.html') + '" target="_blanc">options page</a>.</div>';
     body.insertBefore(warning, body.firstChild);
 }
