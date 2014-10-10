@@ -10,14 +10,14 @@ function getValue(key, callback) {
 
 // Fill the login form.
 function fillForm(callback) {
-    if($('#logonForm').length == 1) {
+    if(document.getElementById('logonForm') != null) {
 
         getValue('username', function(value) {
-            $('input#username').val(value);
+            document.getElementById('username').value = value;
         });
 
         getValue('password', function(value) {
-            $('input#password').val(value);
+            document.getElementById('password').value = value;
         });
     }
 
@@ -26,24 +26,20 @@ function fillForm(callback) {
     }, 1000);
 }
 
-// Check if user filled in the correct password, if not, user is returned to same page.
-function checkCorrectPassword(prevLink) {
-    if(document.URL!=prevLink) {
-        return true;
-    }
-    return false;
-}
-
 // Submit the login form.
 function submitForm() {
-    $('#logonForm').submit();
+    document.getElementById('logonForm').submit();
 }
 
 // Check if error div contains input, if not fill and submit form.
-if(document.contains('.wrng') && $('.wrng').html() == '') {
+var wrngElements = document.getElementsByClassName('wrng');
+if(wrngElements.length > 0 && wrngElements[0].innerHTML == '') {
     fillForm(submitForm);
-} else if($('.wrng') == null) {
+} else if(wrngElements.length == 0) {
     // Do nothing.
 } else {
-    $('body').prepend('<div>Hanze Auto Login: Login failed. Please change login credentials on <a href="' + chrome.extension.getURL("options.html") + '" target="_blanc">options page</a>.</div>');
+    var body = document.getElementsByTagName('body')[0];
+    var warning = document.createElement('div');
+    warning.innerHTML = '<div>Hanze Auto Login: Login failed. Please change login credentials on <a href="' + chrome.extension.getURL('options.html') + '" target="_blanc">options page</a>.</div>';
+    body.insertBefore(warning, body.firstChild);
 }
